@@ -66,6 +66,7 @@ nav ul li a {
     border-top-right-radius: 30px;
     border-width: 1.2px;
 }
+
 .background {
     background-color: #BBAA90;
     width: 100%;
@@ -73,4 +74,15 @@ nav ul li a {
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
+}
+
+.column {
+    padding-bottom: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

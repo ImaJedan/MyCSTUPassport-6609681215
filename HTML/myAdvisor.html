@@ -52,6 +52,10 @@
 			letter-spacing: 1px;
 			font-family: Georgia;
 		}
+		.c {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
 
 		div.a {
 			text-indent: 50px;
@@ -71,6 +75,9 @@
 
 		p.big {
 			line-height: 0.7;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
 		}
 
 		/* normal */
@@ -138,50 +145,21 @@
 	<!-- Layout -->
 
 	<header>
-        <div class="a">
-			<h1 style="padding-left: 100px; padding-top: 50px;"> <br>My Advisor
-			</h1>
-        <!-- Add navigation or other header content here -->
-    </header>
-
-    <main>
-        <section>
-            <h2>Main Content Section</h2>
-            <p class="big">
-				<div class="c">
-					<div style="padding-left: 100px; padding-top: 15px;">
-						<br /><br /><br /> อาจารย์ ดร.ปกป้อง ส่องเมือง
-						<br>ผู้อำนวยการสำนักงานศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร
-						<br>E-mail : pokpongs@tu.ac.th
-					</div>
-            <!-- Add more text or content as needed -->
-        </section>
-
-        <aside>
-            <h2>Image</h2>
-            <img src="../image/my advisor.jpg" alt="Dr.pokpongs" align="right"
-						style="padding-right: 250px; flex-direction: column; flex-direction: row;">
-        </aside>
-    </main>
-
-    <footer>
-        <p>Your Copyright Information or Footer Content</p>
-    </footer>
-
-	<div class="content">
 		<div class="a">
 			<h1 style="padding-left: 100px; padding-top: 50px;"> <br>My Advisor
 			</h1>
-		</div>
-		<p class="big">
 			<div class="c">
 				<div style="padding-left: 100px; padding-top: 15px;">
 					<br /><br /><br /> อาจารย์ ดร.ปกป้อง ส่องเมือง
 					<br>ผู้อำนวยการสำนักงานศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร
 					<br>E-mail : pokpongs@tu.ac.th
+
+				</div>
+				<div class="column">
 					<img src="../image/my advisor.jpg" alt="Dr.pokpongs" align="right"
 						style="padding-right: 250px; flex-direction: column; flex-direction: row;">
 				</div>
-		</p>
-
+			</div>
+				<!-- Add navigation or other header content here -->
+	</header>
 	</div>
