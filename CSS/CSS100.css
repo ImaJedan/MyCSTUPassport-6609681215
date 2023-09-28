@@ -1,61 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.bg{
+
+.bg {
     width: 100%;
     min-height: 100vh;
-    background-image: url("bg.png");
-    background-position: left;
+    background-image: url("../image/bg.png");
+    background-position: center;
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
 }
-nav{
+
+nav {
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-.logo{
+
+.logo {
     width: 140px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 15px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #6B6357;
     font-weight: 400;
 }
-.Button1{
+
+.Button1 {
     display: inline-block;
     text-decoration: none;
     color: black;
     margin: 15;
     font-weight: 400;
     padding: 10px;
-    background-image: linear-gradient(60deg, #BBAA90,#e1dacc);
+    background-image: linear-gradient(60deg, #BBAA90, #e1dacc);
     border-style: groove;
     border-radius: 1cm;
     border-top-right-radius: 30px;
     border-width: 1.2px;
-    }
-.Button2{
+}
+
+.Button2 {
     display: inline-block;
     text-decoration: none;
     color: black;
     margin: 15;
     font-weight: 400;
     padding: 10px;
-    background-image: linear-gradient(45deg, #BBAA90,#e1dacc);
+    background-image: linear-gradient(45deg, #BBAA90, #e1dacc);
     border-style: groove;
     border-radius: 4cm;
     border-top-right-radius: 30px;
     border-width: 1.2px;
+}
+.background {
+    background-color: #BBAA90;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
 }
