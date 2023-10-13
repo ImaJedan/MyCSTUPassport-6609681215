@@ -1,3 +1,4 @@
+/* Reset default styles and set global styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Styling for the main background container */
 .bg {
     width: 100%;
     min-height: 100vh;
@@ -15,44 +17,35 @@
     overflow: hidden;
 }
 
+/* Styling for the navigation bar */
 nav {
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
+/* Styling for the logo */
 .logo {
     width: 140px;
 }
 
+/* Styling for navigation items */
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 15px;
 }
 
+/* Styling for navigation links */
 nav ul li a {
     text-decoration: none;
     color: #6B6357;
     font-weight: 400;
 }
 
-.Button1 {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    margin: 15;
-    font-weight: 400;
-    padding: 10px;
-    background-image: linear-gradient(60deg, #BBAA90, #e1dacc);
-    border-style: groove;
-    border-radius: 1cm;
-    border-top-right-radius: 30px;
-    border-width: 1.2px;
-}
-
+/* Common styling for buttons */
+.Button1,
 .Button2 {
     display: inline-block;
     text-decoration: none;
@@ -60,13 +53,24 @@ nav ul li a {
     margin: 15;
     font-weight: 400;
     padding: 10px;
-    background-image: linear-gradient(45deg, #BBAA90, #e1dacc);
     border-style: groove;
-    border-radius: 4cm;
     border-top-right-radius: 30px;
     border-width: 1.2px;
 }
 
+/* Styling for the first button */
+.Button1 {
+    background-image: linear-gradient(60deg, #BBAA90, #e1dacc);
+    border-radius: 1cm;
+}
+
+/* Styling for the second button */
+.Button2 {
+    background-image: linear-gradient(45deg, #BBAA90, #e1dacc);
+    border-radius: 4cm;
+}
+
+/* Styling for the background */
 .background {
     background-color: #BBAA90;
     width: 100%;
@@ -76,11 +80,13 @@ nav ul li a {
     overflow: hidden;
 }
 
+/* Styling for grid columns */
 .col {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+/* Center an image */
 .center {
     display: block;
     margin-left: auto;
@@ -88,6 +94,7 @@ nav ul li a {
     width: 50%;
 }
 
+/* Styling for gallery items */
 div.gallery {
     border: 1px solid #ccc;
 }
@@ -106,6 +113,7 @@ div.desc {
     text-align: center;
 }
 
+/* Responsive design for gallery items */
 * {
     box-sizing: border-box;
 }
@@ -135,6 +143,7 @@ div.desc {
     clear: both;
 }
 
+/* Styling for description */
 .description {
     font-size: 22px;
 }
