@@ -1,168 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSTU Passport</title>
-    <link rel="stylesheet" href="CSS/CSS100.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
-
-        /* existing CSS styles here */
-
-        .container {
-            display: inline-block;
-            cursor: pointer;
-            padding: 3px;
-        }
-
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 35px;
-            height: 5px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: 0.4s;
-            border-radius: 5cm;
-        }
-
-        .change .bar1 {
-            transform: translate(0, 11px) rotate(-45deg);
-        }
-
-        .change .bar2 {
-            opacity: 0;
-        }
-
-        .change .bar3 {
-            transform: translate(0, -11px) rotate(45deg);
-        }
-
-        h1,
-        h2,
-        h3 {
-            letter-spacing: 1px;
-            font-family: Georgia;
-        }
-
-        div.a {
-            text-indent: 50px;
-            font-size: 35px;
-        }
-
-        div.b {
-            text-indent: 100px;
-            font-size: 35px;
-        }
-
-        div.c {
-            font-size: 17px;
-            font-weight: bold;
-            font-family: 'Noto Sans Thai', sans-serif;
-        }
-
-        p.big {
-            line-height: 0.7;
-        }
-
-        a {
-            transition: 0.2s ease-in-out;
-        }
-
-        a:link {
-            color: rgb(7, 7, 7);
-        }
-
-        a:visited {
-            color: rgb(250, 250, 246);
-        }
-
-        a:hover {
-            color: hotpink;
-            transition: 0.2s ease-in-out;
-        }
-
-        a:active {
-            color: blue;
-        }
-
-        body {
-            background-color: #BBAA90;
-        }
-
-        /* Add media query for screens */
-        @media screen and (max-width: 768px) {
-
-            div.a,
-            div.b {
-                text-indent: 0;
-                font-size: 25px;
-            }
-
-            p.big {
-                line-height: 1.2;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
 </head>
 
 <body>
-
-    <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
-
-    <div class="bg">
-        <!-- navigation content here -->
+    <div class="background">
         <nav>
-            <img src="" class="logo">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="HTML/myAdvisor.html">MY ADVISOR</a></li>
-                <li><a href="HTML/myActivities.html">MY ACTIVITIES</a></li>
-                <li><a href="HTML/Orientation day.html">ORIENTATION DAY</a></li>
-            </ul>
-            <div>
-                <a href="Video/Introduce.mp4" class="Button1">SAY HI</a>
-                <a href="#" class="Button2">MORE</a>
+            <div class="container" onclick="toggleNav('.topnav', this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <script>
+                function toggleNav(selector, element) {
+                    document.querySelector(selector).classList.toggle("shown");
+                    element.classList.toggle("change");
+                }
+            </script>
+            <div class="topnav">
+                <a href="#home" class="active">HOME</a>
+                <div class="myLinks">
+                    <a href="HTML/myAdvisor.html">MY ADVISOR</a>
+                    <a href="HTML/myActivities.html">MY ACTIVITIES</a>
+                    <a href="HTML/Orientation day.html">ORIENTATION DAY</a>
+                </div>
             </div>
         </nav>
-        <div class="content">
-            <div class="a">
-                <h1><br>Thammasat</h1>
-            </div>
-            <div class="a">
-                <h1>University</h1>
-            </div>
-            <div class="b" style="flex-direction: row;">
-                <h1>Students</h1>
+        <div class="col-6 col-s-12">
+            <div class="profile">
                 <div style="flex-direction: column;">
-                    <img src="image/NMdicut.png" alt="Prachaya" style="max-width:42%;height:auto;" class="center">
+                    <img src="/image/Blackmoon.png" alt="Profileimgae" style="max-width:100%;height:auto;">
                 </div>
             </div>
-            <p class="big">
-                <div class="c" class="center">
-                    <br /><br /><br />
-                    สวัสดีครับผมนายปรัชญา เขียวจันทร์ หรือเรียกว่าเอกได้เช่นกันครับ
-                    <br />ตอนนี้ศึกษาอยู่ที่มหาวิทยาลัยธรรมศาสตร์ คณะวิทยาศาสตร์
-                    <br />สาขาวิทยาการคอมพิวเตอร์ ปี 1 ภาคปกติครับ <br /> ขณะนี้ดำรงตำแหน่งเป็นวิดยาคฑากรรุ่นที่ 10 ครับ
+
+            <div class="Igaaxxek_pk">
+                <p><a href="https://www.instagram.com/a.axxek_pk/">Ig : a.axxek_pk</a></p>
+            </div>
+
+            <div class="Aboutme">
+                <h1>About Me -</h1>
+            </div>
+
+            <div class="Name">
+                <h1>Aek Prachaya Kheawchan</h1>
+            </div>
+
+            <div class="context" class="center">
+                สวัสดีครับผมนายปรัชญา
+                เขียวจันทร์หรือเรียกว่าเอกได้เช่นกันครับตอนนี้ศึกษาอยู่ที่มหาวิทยาลัยธรรมศาสตร์
+                คณะวิทยาศาสตร์สาขาวิทยาการคอมพิวเตอร์ ปี 1
+                ภาคปกติครับขณะนี้ดำรงตำแหน่งเป็นวิดยาคฑากรรุ่นที่ 10 ครับ
+            </div>
+        </div>
+        <div class="pid col-6 col-s-12 ">
+            <div class="topic ">
+                <div class="h1">
+                    <h1>ยังไงก็มาลองทำความรู้จักกันหน่อยดีกว่า ☻</h1>
                 </div>
-            </p>
+
+                <div class="arrange">
+                    <p>เป็นคนชอบฟังเพลงครับ มาแชร์เพลงกันได้<br />ชอบดูซีรีย์มากกว่าหนังครับ หนังดูบ้างแต่ไม่เยอะ
+                        เพราะมันจบเร็ว<br />เคยเล่นบาสครับ ถึงปัจจุบันจะอ่อนด๋อยแล้ว แต่ชวนได้
+                        ไปไม่ไปอีกเรื่อง แหะ<br />ชอบเที่ยวครับ แต่ไม่ใช่ตามผับบาร์ ชอบ hang out ภูเขา ทะเลมากกว่า</p>
+                </div>
+
+
+
+                <div class="video-container">
+                    <video width="480" height="840" controls>
+                        <source src="Video/Introduce.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
-        <div style="background-color:#c4b59c;text-align:center;padding:10px;margin-top:7px;">© copyright aeklnwza eiei
-        </div>
+
+
+
     </div>
-
-    <!-- JavaScript code here -->
 </body>
-
-</html>
